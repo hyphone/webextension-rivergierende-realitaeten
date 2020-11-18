@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Divergierende Realitäten – Uploader",
+  "version": "1.4.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "divergierende.realitaeten.uploader@marcaux.de",
+      "strict_min_version": "57.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [
+        "aws-sdk.min.js",
+        "ubid.min.js",
+        "s3uploader.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "48": "/icon-48.png",
+      "64": "/icon-64.png",
+      "128": "/icon-128.png",
+      "256": "/icon-256.png",
+      "338": "/icon-338.png"
+    },
+    "default_title": "Divergierende Realitäten – Uploader",
+    "default_popup": "/popup.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "webRequest"
+  ]
+}

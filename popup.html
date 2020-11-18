@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body{
+        padding: 1em;
+        background-color: #ffffff;
+        color: rgb(102, 102, 102);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        background-image: url(./back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      a {
+        color: rgb(46, 163, 242);
+      }
+      a:hover,
+      a:focus{
+        color: rgb(37, 133, 197);
+      }
+      h1{
+        font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+        margin: 0;
+        color: #131313;
+      }
+      header{
+        display: flex;
+      }
+      header img{
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+      }
+      label{
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+      }
+      label:first-child{
+        margin-top: 0;
+      }
+      label:last-child{
+        margin-bottom: 0;
+      }
+      label.labelcheckbox{
+        align-content: space-around;
+      }
+      label span{
+        display: inline-block;
+        width: calc(30% - 1em);
+        margin-right: 1em;
+        text-align: right;
+      }
+      label.labelcheckbox .cbwrap{
+        width: 25px;
+        margin-right: 15px;
+        text-align: center;
+      }
+      label input{
+        width: 70%;
+      }
+      label.labelcheckbox input{
+        width: auto;
+      }
+      label.labelcheckbox span{
+        display: inline-block;
+        width: 70%;
+        margin: 0;
+        text-align: left;
+      }
+      input{
+        background: #666;
+        color: #FFF;
+        border: none;
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./icon-338.png" />
+      <h1>Divergierende Realitäten – Uploader</h1>
+    </header>
+    <main>
+      <p>Divergierend Realitäten ist ein Projekt von Matin Zellerhoff<br><a href="https://www.zellerhoff.org" target="_blank">zellerhoff.org</a></p>
+
+      <section class="formOptions">
+        <label for="inputActive" class="labelcheckbox">
+          <div class="cbwrap">
+            <input id="inputInActive" name="inputInActive" type="checkbox" value="active">
+          </div>
+          <span>Automatische Bildaufzeichnung deaktivieren</span>
+        </label>
+      </section>
+    </main>
+    <footer>
+      <p style="margin-bottom: 0px;">&copy; Martin Zellerhoff. Created and developed by <a href="https://marcaux.de" target="_blank">Marco Laux</a></p>
+      <small>Der Quelltext kann im <a href="https://github.com/hyphone/webext-divergenderealitaeten">GitHub-Projekt</a> eingesehen werden.</small>
+    </footer>
+    <script src="node_modules/aws-sdk/dist/aws-sdk.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
