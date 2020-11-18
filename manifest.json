@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Divergierende Realitäten – Uploader",
-  "version": "1.4.1",
+  "version": "1.5",
   "browser_specific_settings": {
     "gecko": {
       "id": "divergierende.realitaeten.uploader@marcaux.de",
